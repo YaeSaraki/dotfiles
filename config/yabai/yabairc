@@ -1,0 +1,108 @@
+#!/usr/bin/env sh
+
+#
+# for this to work you must configure sudo such that
+# it will be able to run the command without password
+#
+# see this wiki page for information:
+#  - https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition
+#
+# yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+# sudo yabai --load-sa
+# 
+#
+## signal with sketchybar
+yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
+yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
+yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
+
+declare -A gaps
+declare -A color
+
+gaps["top"]="4"
+gaps["bottom"]="24"
+gaps["left"]="4"
+gaps["right"]="4"
+gaps["inner"]="4"
+
+
+color["focused"]="0xff191970"
+color["normal"]="0xff000080"
+color["preselect"]="0xE02d74da"
+
+
+yabai -m config window_border on
+yabai -m config window_border_width 4
+yabai -m config active_window_border_color "${color["focused"]}"
+yabai -m config normal_window_border_color "${color["normal"]}"
+yabai -m config insert_feedback_color      "${color["preselect"]}"
+
+# yabai -m window --toggle border
+
+
+# ===== Tiling setting =========================
+
+yabai -m config layout                      bsp
+
+yabai -m config top_padding                 "${gaps["top"]}"
+yabai -m config bottom_padding              "${gaps["bottom"]}"
+yabai -m config left_padding                "${gaps["left"]}"
+yabai -m config right_padding               "${gaps["right"]}"
+yabai -m config window_gap                  "${gaps["inner"]}"
+
+# 状态栏间距
+yabai -m config external_bar all:35:0
+
+yabai -m config mouse_follows_focus         on
+yabai -m config focus_follows_mouse         off
+
+yabai -m config window_topmost              off
+yabai -m config window_opacity              on
+yabai -m config window_shadow               float
+
+#窗口边距设置
+
+yabai -m config active_window_opacity       0.80
+yabai -m config normal_window_opacity       0.70
+
+yabai -m config auto_balance                off
+
+yabai -m config mouse_modifier              alt
+yabai -m config mouse_action1               move
+yabai -m config mouse_action2               resize
+
+
+yabai -m rule --add app=".*Preferences.*" manage=off layer="above"
+
+yabai -m rule --add app=".*Preview.*" manage=off layer="above"
+
+yabai -m rule --add label="NetEaseMusic" app="^NetEaseMusic$" manage=off layer="above"
+
+yabai -m rule --add label="Finder" app="^Finder$"  manage=off 
+
+yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off layer="above"
+
+yabai -m rule --add label="System Preferences" app="^系统设置$" title=".*" manage=off layer="above"
+
+yabai -m rule --add label="App Store" app="^App Store$" manage=off layer="above"
+
+yabai -m rule --add label="Activity Monitor" app="^活动监视器$" manage=off layer="above"
+
+yabai -m rule --add label="Software Update" title="Software Update" manage=off layer="above"
+
+yabai -m rule --add label="About This Mac" app="关于本机" title="About This Mac" manage=off layer="above"
+
+yabai -m rule --add app="^Raycast$" manage=off layer="above"
+
+yabai -m rule --add app="^微信$" manage=off layer="above"
+
+# yabai -m rule --add app="^.*哔哩哔哩.*" manage=off layer="above"
+
+yabai -m rule --add app="^WeChat$" manage=off layer="above"
+
+# yabai -m rule --add app="^Obsidian$" manage=off layer="above"
+
+yabai -m rule --add app="^CleanMyMac X$" manage=off layer="above"
+
+echo "yabai configuration loaded.."
+

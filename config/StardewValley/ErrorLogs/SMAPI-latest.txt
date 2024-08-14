@@ -1,0 +1,452 @@
+[21:21:24 INFO  SMAPI] SMAPI 4.0.8 with Stardew Valley 1.6.8 build 24119 on macOS Unix 11.7.10
+[21:21:24 INFO  SMAPI] Mods go here: /Users/saraki/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS/Mods
+[21:21:24 TRACE SMAPI] Log started at 2024-07-29T13:21:24 UTC
+[21:21:40 DEBUG SMAPI] Waiting for game to launch...
+[21:21:43 DEBUG SMAPI] Loading mod metadata...
+[21:21:43 TRACE SMAPI]   Ignored loose files: .DS_Store
+[21:21:43 DEBUG SMAPI] Loading mods...
+[21:21:43 TRACE SMAPI]    Console Commands (from Mods/ConsoleCommands/ConsoleCommands.dll, ID: SMAPI.ConsoleCommands)...
+[21:21:44 TRACE SMAPI]    Save Backup (from Mods/SaveBackup/SaveBackup.dll, ID: SMAPI.SaveBackup)...
+[21:21:44 TRACE SMAPI]       Detected direct console access (System.Console type) in assembly SaveBackup.dll.
+[21:21:44 TRACE SMAPI]    Content Patcher (from Mods/ContentPatcher/ContentPatcher.dll, ID: Pathoschild.ContentPatcher)...
+[21:21:45 TRACE SMAPI]    SpaceCore (from Mods/SpaceCore/SpaceCore.dll, ID: spacechase0.SpaceCore)...
+[21:21:45 TRACE SMAPI]       Detected game patcher in assembly SpaceCore.dll.
+[21:21:45 TRACE SMAPI]       Detected possible save serializer change (StardewValley.SaveGame.farmerSerializer field, StardewValley.SaveGame.locationSerializer field, StardewValley.SaveGame.serializer field) in assembly SpaceCore.dll.
+[21:21:46 TRACE SMAPI]    OhoDavi's StardewValley Anime Mods (from Mods/[CP] Portrait Anime Mods OhoDavi, ID: OhoDavi.SDVAnimeP) [content pack]...
+[21:21:46 TRACE SMAPI]    Your Mod Name (from Mods/Modder Sample Pack, ID: YourUserName.YourModName) [content pack]...
+[21:21:46 TRACE SMAPI]       Failed: it requires mods which aren't installed (MartyrPher.GetGlam).
+[21:21:46 INFO  SMAPI] Loaded 4 mods:
+[21:21:46 INFO  SMAPI]    Console Commands 4.0.8 by SMAPI | Adds SMAPI console commands that let you manipulate the game.
+[21:21:46 INFO  SMAPI]    Content Patcher 2.3.0 by Pathoschild | Loads content packs which edit game data, images, and maps without changing the game files.
+[21:21:46 INFO  SMAPI]    Save Backup 4.0.8 by SMAPI | Automatically backs up all your saves once per day into its folder.
+[21:21:46 INFO  SMAPI]    SpaceCore 1.24.2 by spacechase0 | A framework mod used by some of my other mods.
+
+[21:21:46 INFO  SMAPI] Loaded 1 content packs:
+[21:21:46 INFO  SMAPI]    OhoDavi's StardewValley Anime Mods 1.6.0 by OhoDavi | for Content Patcher | Replaces the Vanilla Portraits with OhoDavi's Anime-like Portraits.
+
+[21:21:46 INFO  SMAPI] Found 3 mods with warnings:
+[21:21:46 ERROR SMAPI]    Skipped mods
+[21:21:46 ERROR SMAPI]    --------------------------------------------------
+[21:21:46 ERROR SMAPI]       These mods could not be added to your game.
+
+[21:21:46 ERROR SMAPI]       - Your Mod Name 1.0.0 because it requires mods which aren't installed (MartyrPher.GetGlam).
+
+[21:21:46 WARN  SMAPI]    Changed save serializer
+[21:21:46 WARN  SMAPI]    --------------------------------------------------
+[21:21:46 WARN  SMAPI]       These mods change the save serializer. They may corrupt your save files, or make them unusable if
+[21:21:46 WARN  SMAPI]       you uninstall these mods.
+
+[21:21:46 WARN  SMAPI]       - SpaceCore
+
+[21:21:46 INFO  SMAPI]    Patched game code
+[21:21:46 INFO  SMAPI]    --------------------------------------------------
+[21:21:46 INFO  SMAPI]       These mods directly change the game code. They're more likely to cause errors or bugs in-game; if
+[21:21:46 INFO  SMAPI]       your game has issues, try removing these first. Otherwise you can ignore this warning.
+
+[21:21:46 INFO  SMAPI]       - SpaceCore
+
+[21:21:46 DEBUG SMAPI] Launching mods...
+[21:21:46 TRACE Save Backup] Backed up to /Users/saraki/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/MacOS/save-backups/2024-07-29 - SMAPI 4.0.8 with Stardew Valley 1.6.8.zip.
+[21:21:46 TRACE SMAPI]    Found mod-provided API (ContentPatcher.Framework.ContentPatcherAPI).
+[21:21:47 TRACE game] Registered Data/Triggers action: spacechase0.SpaceCore_PlaySound
+[21:21:47 TRACE game] Registered Data/Triggers action: spacechase0.SpaceCore_ShowHudMessage
+[21:21:47 TRACE game] Registered Data/Triggers action: spacechase0.SpaceCore_PlayEvent
+[21:21:47 TRACE game] Registered Data/Triggers action: spacechase0.SpaceCore_DamageCurrentFarmer
+[21:21:47 TRACE game] Registered Data/Triggers action: spacechase0.SpaceCore_ApplyBuff
+[21:21:47 TRACE game] Registered event command: damageFarmer
+[21:21:47 TRACE game] Registered event command: giveHat
+[21:21:47 TRACE game] Registered event command: setDating
+[21:21:47 TRACE game] Registered event command: setEngaged
+[21:21:47 TRACE game] Registered event command: totemWarpEffect
+[21:21:47 TRACE game] Registered event command: setActorScale
+[21:21:47 TRACE game] Registered event command: cycleActorColors
+[21:21:47 TRACE game] Registered event command: flash
+[21:21:47 TRACE game] Registered event command: setRaining
+[21:21:47 TRACE game] Registered event command: screenShake
+[21:21:47 TRACE game] Registered event command: setZoom
+[21:21:47 TRACE game] Registered event command: smoothZoom
+[21:21:47 TRACE game] Registered Data/Triggers trigger type: spacechase0.SpaceCore_OnItemUsed.
+[21:21:47 TRACE game] Registered Data/Triggers trigger type: spacechase0.SpaceCore_OnItemEaten.
+[21:21:48 TRACE SpaceCore] NPC.draw: inserting mul at 36
+[21:21:48 TRACE SpaceCore] NPC.draw: inserting mul at 42
+[21:21:48 TRACE SpaceCore] NPC.draw: inserting mul at 47
+[21:21:48 TRACE SpaceCore] NPC.draw: replacing Color.White at 139
+[21:21:48 TRACE SpaceCore] NPC.draw: replacing Color.White at 277
+[21:21:48 TRACE SpaceCore] NPC.draw: inserting vec2 mul at 303
+[21:21:48 TRACE SpaceCore] NPC.draw: replacing SpriteBatch.Draw at 324
+[21:21:48 TRACE SpaceCore] NPC.DrawBreathing: replacing Color.White at 283
+[21:21:48 TRACE SpaceCore] NPC.DrawBreathing: inserting vec2 mul/add at 308
+[21:21:48 TRACE SpaceCore] NPC.DrawBreathing: replacing Draw at 329
+[21:21:48 TRACE SpaceCore] Found crafting recipe constructor in Void layoutRecipes(System.Collections.Generic.List`1[System.String])!
+[21:21:48 TRACE SpaceCore] Found first ldloc.s for ClickableTextureComponent in Void layoutRecipes(System.Collections.Generic.List`1[System.String]); storing potential override w/ recipeLocal=StardewValley.CraftingRecipe (9)
+[21:21:48 TRACE SpaceCore] Found crafting recipe constructor in System.String createDescription(System.String)!
+[21:21:50 TRACE SMAPI]    Found mod-provided API (SpaceCore.Api).
+[21:21:50 DEBUG SMAPI] Mods loaded and ready!
+[21:21:50 TRACE SMAPI] Checking for updates...
+[21:21:51 TRACE game] setGameMode( 'titleScreenGameMode (0)' )
+[21:21:51 TRACE game] Steam logged on: True
+[21:21:51 TRACE game] Initializing GalaxySDK
+[21:21:51 TRACE game] Requesting Steam app ticket
+[21:21:52 INFO  SMAPI] Type 'help' for help, or 'help <cmd>' for a command's usage
+[21:21:52 TRACE SpaceCore] Accessed mod-provided API (ContentPatcher.Framework.ContentPatcherAPI) for Content Patcher.
+[21:21:52 TRACE SMAPI]    SMAPI okay.
+[21:21:52 TRACE SMAPI]    Checking for updates to 4 mods...
+[21:21:52 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/TextureOverrides'.
+[21:21:52 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/CraftingRecipeOverrides'.
+[21:21:52 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/CookingRecipeOverrides'.
+[21:21:52 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/VirtualCurrencyData'.
+[21:21:52 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/WearableData'.
+[21:21:52 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/TriggerActionExtensionData'.
+[21:21:52 TRACE SpaceCore] Accessed mod-provided API (SpaceCore.Api) for SpaceCore.
+[21:21:52 TRACE game] Signing into GalaxySDK
+[21:21:52 TRACE SMAPI]    All mods up to date.
+[21:21:53 TRACE Content Patcher] SpaceCore added 4 custom tokens with prefix 'spacechase0.SpaceCore/': BooksellerInTown, CurrentEventId, CurrentlyInEvent, QuestionsAsked.
+[21:21:53 INFO  Content Patcher] Some content packs haven't been updated for Stardew Valley 1.6.0. Content Patcher will try to auto-migrate them, but compatibility isn't guaranteed.
+
+Affected content packs:
+- OhoDavi's StardewValley Anime Mods
+
+For mod authors, see how to update a mod: https://smapi.io/cp-migrate.
+[21:21:53 TRACE game] Registered Data/Triggers action: Pathoschild.ContentPatcher_MigrateIds
+[21:21:53 TRACE Content Patcher] Requested cache invalidation for all assets matching a predicate.
+[21:21:53 TRACE SMAPI] Invalidated 0 cache entries.
+[21:21:54 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:22:05 TRACE game] Galaxy auth success
+[21:22:05 TRACE game] Galaxy signed in
+[21:22:05 TRACE game] Galaxy logged on
+[21:22:08 TRACE game] Successfully set GOG Galaxy profile name.
+[21:22:09 TRACE SMAPI] Synchronizing 'Find Save Games' task...
+[21:22:13 TRACE SMAPI]    task complete.
+[21:22:17 TRACE game] gameMode was 'titleScreenGameMode (0)', set to 'loadingMode (6)'.
+[21:22:17 TRACE SMAPI] Game loader synchronizing...
+[21:22:17 TRACE game] getLoadEnumerator('ikas_381721402')
+[21:22:18 TRACE game] regular stream detected...
+[21:22:18 TRACE SMAPI] Synchronizing 'Load_Deserialize' task...
+[21:22:21 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/FurnitureExtensionData'.
+[21:22:21 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/NpcExtensionData'.
+[21:22:22 TRACE SMAPI]    task complete.
+[21:22:23 TRACE SMAPI] Synchronizing 'Load_LoadForNewGame' task...
+[21:22:23 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/ObjectExtensionData'.
+[21:22:23 TRACE SMAPI] Content Patcher edited Data/Locations.
+[21:22:24 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/FarmExtensionData'.
+[21:22:24 TRACE SpaceCore] Event: OnBlankSave
+[21:22:24 TRACE SMAPI]    task complete.
+[21:22:24 TRACE SMAPI] Synchronizing 'Load_Farmer' task...
+[21:22:24 TRACE SMAPI]    task complete.
+[21:22:24 TRACE SMAPI] Synchronizing 'Load_Locations' task...
+[21:22:24 TRACE SMAPI] Content Patcher edited Portraits/George (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:24 TRACE SMAPI] Content Patcher edited Portraits/Evelyn (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Alex (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 WARN  Content Patcher] Can't apply image patch "OhoDavi's StardewValley Anime Mods > EditImage Portraits/Emily #1" to Portraits/Emily: the FromFile file 'assets/Emily.png' doesn't exist.
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Emily (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Haley (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Jodi (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Sam (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Vincent (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Clint (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Lewis (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Pierre (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Caroline (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Abigail (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Gus (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Penny (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Pam (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Harvey (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Elliott (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Demetrius (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Robin (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Maru (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Sebastian (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Linus (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Wizard (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Marnie (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Jas (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Shane (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Leah (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Dwarf (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Krobus (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/MrQi (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Sandy (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Gunther (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Marlon (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Henchman (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI] Content Patcher edited Portraits/Willy (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:22:25 TRACE SMAPI]    task complete.
+[21:22:25 TRACE game] gameMode was 'loadingMode (6)', set to 'playingGameMode (3)'.
+[21:22:26 TRACE game] getLoadEnumerator() exited, elapsed = '00:00:08.6491236'
+[21:22:26 TRACE SMAPI] Game loader done.
+[21:22:26 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:22:26 TRACE SMAPI] Context: loaded save 'ikas_381721402', starting spring 4 Y1, locale set to . Single-player.
+[21:22:37 TRACE SpaceCore] Event: BeforeWarp
+[21:22:37 TRACE game] Warping to Farm
+[21:22:46 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/ScheduleAnimationExtensionData'.
+[21:24:02 TRACE SpaceCore] Event: BeforeWarp
+[21:24:02 TRACE game] Warping to BusStop
+[21:24:05 TRACE SpaceCore] Event: BeforeWarp
+[21:24:05 TRACE game] Warping to Farm
+[21:24:15 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:25:02 TRACE SMAPI] Content Patcher edited Portraits/Maru_Hospital (for the 'OhoDavi's StardewValley Anime Mods' content pack).
+[21:26:37 TRACE SpaceCore] Event: BeforeWarp
+[21:26:37 TRACE game] Warping to FarmHouse
+[21:26:52 TRACE SMAPI] Synchronizing 'NewDay' task...
+[21:26:53 TRACE SpaceCore] Event: ChooseNightlyFarmEvent
+[21:26:53 TRACE SpaceCore] Event: ShowNightEndMenus
+[21:26:53 DEBUG SpaceCore] Doing skill menus
+[21:26:53 TRACE SMAPI]    task complete.
+[21:26:53 TRACE SMAPI] Context: before save.
+[21:26:53 TRACE SpaceCore] Saving custom data
+[21:26:53 TRACE game] SaveGame.Save() called.
+[21:26:53 TRACE SMAPI] Synchronizing 'Save' task...
+[21:26:53 TRACE game] Saving without compression...
+[21:26:55 TRACE SMAPI]    task complete.
+[21:26:55 TRACE game] SaveGame.Save() completed without exceptions.
+[21:26:57 TRACE SMAPI] Context: after save, starting spring 5 Y1.
+[21:27:07 TRACE SpaceCore] Event: BeforeWarp
+[21:27:07 TRACE game] Warping to Farm
+[21:27:55 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:33:32 TRACE SpaceCore] Event: BeforeWarp
+[21:33:32 TRACE game] Warping to Forest
+[21:33:46 TRACE SpaceCore] Event: BeforeWarp
+[21:33:46 TRACE game] Warping to AnimalShop
+[21:34:45 TRACE SpaceCore] Event: BeforeWarp
+[21:34:45 TRACE game] Warping to Forest
+[21:35:06 TRACE SpaceCore] Event: BeforeWarp
+[21:35:06 TRACE game] Warping to Farm
+[21:36:11 TRACE SpaceCore] Event: BeforeWarp
+[21:36:11 TRACE game] Warping to FarmHouse
+[21:36:17 TRACE SMAPI] Synchronizing 'NewDay' task...
+[21:36:17 TRACE SpaceCore] Event: ChooseNightlyFarmEvent
+[21:36:17 TRACE SpaceCore] Event: ShowNightEndMenus
+[21:36:17 DEBUG SpaceCore] Doing skill menus
+[21:36:17 TRACE SMAPI]    task complete.
+[21:36:17 TRACE SMAPI] Context: before save.
+[21:36:17 TRACE SpaceCore] Saving custom data
+[21:36:37 TRACE game] SaveGame.Save() called.
+[21:36:37 TRACE SMAPI] Synchronizing 'Save' task...
+[21:36:37 TRACE game] Saving without compression...
+[21:36:37 TRACE SMAPI]    task complete.
+[21:36:37 TRACE game] SaveGame.Save() completed without exceptions.
+[21:36:41 TRACE SMAPI] Context: after save, starting spring 6 Y1.
+[21:36:44 TRACE SpaceCore] Event: BeforeWarp
+[21:36:44 TRACE game] Warping to Farm
+[21:36:52 TRACE SMAPI] SpaceCore loaded asset 'spacechase0.SpaceCore/CropExtensionData'.
+[21:38:25 TRACE SpaceCore] Event: BeforeWarp
+[21:38:25 TRACE game] Warping to BusStop
+[21:38:34 TRACE SpaceCore] Event: BeforeWarp
+[21:38:34 TRACE game] Warping to Town
+[21:39:51 TRACE SpaceCore] Event: OnEventFinished
+[21:39:51 TRACE SpaceCore] Event: BeforeWarp
+[21:39:51 TRACE game] Warping to Town
+[21:40:23 TRACE SpaceCore] Event: BeforeWarp
+[21:40:23 TRACE game] Warping to CommunityCenter
+[21:41:04 TRACE SpaceCore] Event: BeforeWarp
+[21:41:04 TRACE game] Warping to Town
+[21:41:26 TRACE SpaceCore] Event: BeforeWarp
+[21:41:26 TRACE game] Warping to JoshHouse
+[21:42:07 TRACE SpaceCore] Event: BeforeWarp
+[21:42:07 TRACE game] Warping to Town
+[21:42:24 TRACE SpaceCore] Event: BeforeWarp
+[21:42:24 TRACE game] Warping to Trailer
+[21:42:35 TRACE SpaceCore] Event: BeforeWarp
+[21:42:35 TRACE game] Warping to Town
+[21:43:10 TRACE SpaceCore] Event: BeforeWarp
+[21:43:10 TRACE game] Warping to Beach
+[21:43:24 TRACE SpaceCore] Event: OnEventFinished
+[21:43:24 TRACE SpaceCore] Event: BeforeWarp
+[21:43:24 TRACE game] Warping to Beach
+[21:49:06 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:50:13 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:50:20 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:50:23 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:50:32 TRACE SpaceCore] Event: OnItemEaten
+[21:51:07 TRACE SpaceCore] Event: BeforeWarp
+[21:51:07 TRACE game] Warping to Town
+[21:51:11 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:51:11 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:51:11 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:51:11 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:51:11 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:51:11 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:51:11 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:51:11 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:51:23 TRACE SpaceCore] Event: BeforeWarp
+[21:51:23 TRACE game] Warping to JoshHouse
+[21:51:25 TRACE SpaceCore] Event: BeforeWarp
+[21:51:25 TRACE game] Warping to Town
+[21:51:30 TRACE SpaceCore] Event: BeforeWarp
+[21:51:30 TRACE game] Warping to Trailer
+[21:51:32 TRACE SpaceCore] Event: BeforeWarp
+[21:51:32 TRACE game] Warping to Town
+[21:51:40 TRACE SpaceCore] Event: BeforeWarp
+[21:51:40 TRACE game] Warping to Saloon
+[21:51:56 TRACE SpaceCore] Event: BeforeWarp
+[21:51:56 TRACE game] Warping to Town
+[21:52:25 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:25 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:25 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:25 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:25 TRACE SpaceCore] Event: AfterGiftGiven
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:29 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:32 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:52:36 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:52:43 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:58 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:52:59 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:05 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:06 TRACE SpaceCore] Event: BeforeReceiveObject
+[21:53:39 TRACE SpaceCore] Event: BeforeWarp
+[21:53:39 TRACE game] Warping to Forest
+[21:53:55 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:54:00 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:54:01 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[21:54:04 TRACE game] Disconnected: ClosedGame
+[21:54:04 TRACE SMAPI] Disposing...
+[21:54:04 TRACE SMAPI] Disposing the content coordinator. Content managers will no longer be usable after this point.
