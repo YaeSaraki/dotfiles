@@ -80,6 +80,8 @@ yabai -m rule --add label="NetEaseMusic" app="^NetEaseMusic$" manage=off layer="
 
 yabai -m rule --add label="Finder" app="^Finder$"  manage=off 
 
+yabai -m rule --add label="Steam" app="^Steam$"  manage=off 
+
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off layer="above"
 
 yabai -m rule --add label="System Preferences" app="^系统设置$" title=".*" manage=off layer="above"

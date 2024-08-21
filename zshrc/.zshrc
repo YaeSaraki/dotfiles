@@ -93,6 +93,8 @@ export PATH="/Users/saraki/bin:$PATH"
 export PATH="/Users/saraki/go/bin:$PATH"
 # Latex
 export PATH="/Library/TeX/texbin:$PATH"
+export PATH="/opt/anaconda3/bin:$PATH"
+
 
 
 
@@ -125,7 +127,7 @@ export PATH="/Library/TeX/texbin:$PATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Codeforce tools
-alias cfgo="/Users/saraki/document/cf"
+alias cfgo="/Users/saraki/Documents/project/cf"
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -146,3 +148,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
